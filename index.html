@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port Moresby Nature Park</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Port_Moresby_Nature_Park_Entrance.jpg/1200px-Port_Moresby_Nature_Park_Entrance.jpg') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);}
+    header p { font-size: 1.2rem; max-width: 700px; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);}
+    header a { margin-top: 20px; padding: 12px 30px; background: #4CAF50; color: white; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+    header a:hover { background: #45a049; }
+
+    /* Sections */
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: #2c3e50; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 { margin-bottom: 10px; color: #27ae60; }
+    .card p { font-size: 0.95rem; }
+
+    /* Contact Section */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+    }
+
+    @media(max-width: 768px){
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Port Moresby Nature Park</h1>
+    <p>Explore the heart of Papua New Guinea's biodiversity, with tropical gardens, wildlife, and cultural experiences all in one place.</p>
+    <a href="#attractions">Discover More</a>
+  </header>
+
+  <!-- Overview -->
+  <section id="overview">
+    <h2>About the Park</h2>
+    <p>Port Moresby Nature Park is a premier tourist destination in Papua New Guinea. It combines botanical gardens, wildlife exhibits, and cultural experiences. Visitors can enjoy scenic walks, family-friendly activities, and educational programs focused on conservation and PNG’s rich biodiversity.</p>
+  </section>
+
+  <!-- Attractions -->
+  <section id="attractions">
+    <h2>Main Attractions</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bird_of_Paradise_1.jpg/800px-Bird_of_Paradise_1.jpg" alt="Birds of Paradise">
+        <h3>Wildlife Exhibits</h3>
+        <p>See Papua New Guinea's unique wildlife including Birds of Paradise, cassowaries, tree-kangaroos, and reptiles in naturalistic settings.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tropical_Garden_Path.jpg/800px-Tropical_Garden_Path.jpg" alt="Botanical Gardens">
+        <h3>Botanical Gardens</h3>
+        <p>Walk through tropical gardens and rainforest paths featuring the native flora of PNG, perfect for education and relaxation.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Port_Moresby_Nature_Park_Playground.jpg/800px-Port_Moresby_Nature_Park_Playground.jpg" alt="Family Activities">
+        <h3>Family Activities</h3>
+        <p>Enjoy playgrounds, picnic areas, guided tours, and interactive educational programs suitable for all ages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Visitor Information</h2>
+    <div class="contact-info">
+      <p><strong>Address:</strong> Goro-Kaeaga Road, Port Moresby, PNG</p>
+      <p><strong>Phone:</strong> +675 326 0248</p>
+      <p><strong>Hours:</strong> 9:00 AM – 4:30 PM daily</p>
+      <p><strong>Website:</strong> <a href="https://www.ncdc.gov.pg/places-to-visit/port-moresby-nature-park.html" target="_blank">Visit Official Page</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Port Moresby Nature Park. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
